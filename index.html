@@ -1,232 +1,274 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Basic SEO -->
     <title>TOPSTAR999</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta name="description" content="TOPSTAR999 merupakan website resmi dengan tampilan modern, cepat diakses, responsif di desktop maupun perangkat mobile.">
 
-        body {
-            background: #000;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
+    <meta name="keywords" content="landing page, website, modern, responsif, online, informasi, layanan, digital, slot, game, zeus, pragmatic, bola, Situs, toto">
 
-        /* =========================
+    <meta name="author" content="TOPSTAR999">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="id">
+    <meta name="revisit-after" content="30 days">
+    <meta name="rating" content="general">
+    <meta name="twitter:url" content="https://topstar999-tri.store/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://topstar999-tri.store/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="TOPSTAR999">
+    <meta property="og:title" content="TOPSTAR999">
+   <meta property="og:description" content="Website resmi dengan tampilan modern dan responsif.">
+   <meta property="og:url" content="https://topstar999-tri.store/">
+    <meta property="og:image" content="https://i.postimg.cc/zGgwRMfw/BCO-0b16d4e1-0b29-4a80-ad9d-73be9e557b20.png">
+
+    <!-- Twitter -->
+ <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TOPSTAR999">
+<meta name="twitter:description" content="Website resmi dengan tampilan modern dan responsif.">
+<meta name="twitter:image" content="https://i.postimg.cc/zGgwRMfw/BCO-0b16d4e1-0b29-4a80-ad9d-73be9e557b20.png">
+
+    <!-- Mobile -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TOPSTAR999",
+  "url": "https://topstar999-tri.store/",
+  "description": "Website resmi dengan desain modern, responsif, dan cepat diakses dari berbagai perangkat.",
+  "inLanguage": "id-ID",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TOPSTAR999",
+    "url": "https://topstar999-tri.store/"
+  }
+}
+
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+}
+
+/* =========================
    BACKGROUND
 ========================= */
-        .bg {
-            position: fixed;
-            inset: 0;
-            background: url("https://i.postimg.cc/N0jKXsRh/513f6b7a-41a2-4d71-a0ce-efefb796a7a4.png") center/contain no-repeat;
-            animation: floatBG 4s ease-in-out infinite;
-            z-index: 1;
-            filter: drop-shadow(0 0 25px #00ffff);
-        }
+.bg{
+    position:fixed;
+    inset:0;
+    background:url("https://i.postimg.cc/N0jKXsRh/513f6b7a-41a2-4d71-a0ce-efefb796a7a4.png")
+    center/contain no-repeat;
+    animation:floatBG 4s ease-in-out infinite;
+    z-index:1;
+    filter:drop-shadow(0 0 25px #00ffff);
+}
 
-        @keyframes floatBG {
-            0% {
-                transform: scale(1);
-            }
+@keyframes floatBG{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
 
-            50% {
-                transform: scale(1.05);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        /* =========================
+/* =========================
    MENU
 ========================= */
-        .menu {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 999;
-        }
+.menu{
+    position:fixed;
+    top:20px;
+    left:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    z-index:999;
+}
 
-        .menu a {
-            text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 40px;
-            font-weight: bold;
-            border: 2px solid #00eaff;
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
-            backdrop-filter: blur(10px);
-            animation: blinkMenu 1s infinite;
-            text-align: center;
-        }
+.menu a{
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:40px;
+    font-weight:bold;
+    border:2px solid #00eaff;
+    background:rgba(255,255,255,0.08);
+    color:#fff;
+    backdrop-filter:blur(10px);
+    animation:blinkMenu 1s infinite;
+    text-align:center;
+}
 
-        .menu a:hover {
-            transform: scale(1.05);
-            background: #00eaff;
-            color: #000;
-        }
+.menu a:hover{
+    transform:scale(1.05);
+    background:#00eaff;
+    color:#000;
+}
 
-        .menu a.live {
-            border-color: #ff00ff;
-        }
+.menu a.live{
+    border-color:#ff00ff;
+}
 
-        @keyframes blinkMenu {
-            0% {
-                opacity: 1;
-            }
+@keyframes blinkMenu{
+    0%{opacity:1;}
+    50%{opacity:.5;}
+    100%{opacity:1;}
+}
 
-            50% {
-                opacity: .5;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* =========================
+/* =========================
    COMMENTS (BOTTOM AREA)
 ========================= */
-        .comments-wrapper {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            z-index: 999;
-        }
+.comments-wrapper{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:999;
+}
 
-        /* =========================
+/* =========================
    PUJIAN (ATAS)
 ========================= */
-        .comments-praise {
-            background: rgba(0, 0, 0, 0.45);
-            padding: 6px 0;
-            backdrop-filter: blur(6px);
-            overflow: hidden;
-        }
+.comments-praise{
+    background:rgba(0,0,0,0.45);
+    padding:6px 0;
+    backdrop-filter:blur(6px);
+    overflow:hidden;
+}
 
-        .track-praise {
-            display: flex;
-            gap: 60px;
-            white-space: nowrap;
-            animation: moveRight 25s linear infinite;
-            color: #00eaff;
-            font-weight: bold;
-            text-shadow: 0 0 8px #00eaff;
-        }
+.track-praise{
+    display:flex;
+    gap:60px;
+    white-space:nowrap;
+    animation:moveRight 25s linear infinite;
+    color:#00eaff;
+    font-weight:bold;
+    text-shadow:0 0 8px #00eaff;
+}
 
-        @keyframes moveRight {
-            0% {
-                transform: translateX(-100%);
-            }
+@keyframes moveRight{
+    0%{transform:translateX(-100%);}
+    100%{transform:translateX(100%);}
+}
 
-            100% {
-                transform: translateX(100%);
-            }
-        }
-
-        /* =========================
+/* =========================
    SERING MENANG (PALING BAWAH)
 ========================= */
-        .comments-win {
-            background: rgba(0, 0, 0, 0.65);
-            padding: 8px 0;
-            backdrop-filter: blur(6px);
-            overflow: hidden;
-            border-top: 1px solid rgba(255, 0, 255, 0.3);
-        }
+.comments-win{
+    background:rgba(0,0,0,0.65);
+    padding:8px 0;
+    backdrop-filter:blur(6px);
+    overflow:hidden;
+    border-top:1px solid rgba(255,0,255,0.3);
+}
 
-        .track-win {
-            display: flex;
-            gap: 60px;
-            white-space: nowrap;
-            animation: moveLeft 22s linear infinite;
-            color: #ff00ff;
-            font-weight: bold;
-            text-shadow: 0 0 8px #ff00ff;
-        }
+.track-win{
+    display:flex;
+    gap:60px;
+    white-space:nowrap;
+    animation:moveLeft 22s linear infinite;
+    color:#ff00ff;
+    font-weight:bold;
+    text-shadow:0 0 8px #ff00ff;
+}
 
-        @keyframes moveLeft {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
+@keyframes moveLeft{
+    0%{transform:translateX(100%);}
+    100%{transform:translateX(-100%);}
+}
+</style>
 </head>
 
 <body>
 
-    <!-- BACKGROUND -->
-    <a class="bg" href="https://topstar999-tri.store/" target="_blank"></a>
+<!-- BACKGROUND -->
+<a class="bg" href="https://topstar999-tri.store/" target="_blank"></a>
 
-    <!-- MENU -->
-    <div class="menu">
+<!-- MENU -->
+<div class="menu">
 
-        <a href="https://wa.me/6282272791289" target="_blank">
-            📱 WhatsApp
-        </a>
+    <a href="https://wa.me/6282272791289" target="_blank">
+        📱 WhatsApp
+    </a>
 
-        <a class="live" href="https://app.chaport.com/widget/show.html?appid=60b2bab71be29b19b40f1bc8" target="_blank">
-            💬 Live Chat
-        </a>
+    <a class="live" href="https://app.chaport.com/widget/show.html?appid=60b2bab71be29b19b40f1bc8" target="_blank">
+        💬 Live Chat
+    </a>
 
-        <a href="https://topstar999-tri.store/" target="_blank">
-            ⭐ TOPSTAR999
-        </a>
+    <a href="https://topstar999-tri.store/" target="_blank">
+        ⭐ TOPSTAR999
+    </a>
 
+</div>
+
+<!-- COMMENTS -->
+<div class="comments-wrapper">
+
+    <!-- PUJIAN (ATAS) -->
+    <div class="comments-praise">
+        <div class="track-praise">
+            <span>A*** : Situs ini keren banget</span>
+            <span>B*** : Tampilan sangat bagus</span>
+            <span>C*** : Aku suka banget</span>
+            <span>D*** : Keren maksimal</span>
+            <span>E*** : Mantap sekali</span>
+        </div>
     </div>
 
-    <!-- COMMENTS -->
-    <div class="comments-wrapper">
-
-        <!-- PUJIAN (ATAS) -->
-        <div class="comments-praise">
-            <div class="track-praise">
-                <span>A*** : Situs ini keren banget</span>
-                <span>B*** : Tampilan sangat bagus</span>
-                <span>C*** : Aku suka banget</span>
-                <span>D*** : Keren maksimal</span>
-                <span>E*** : Mantap sekali</span>
-            </div>
+    <!-- SERING MENANG (BAWAH) -->
+    <div class="comments-win">
+        <div class="track-win">
+            <span>F*** : Aku sering menang 🔥</span>
+            <span>G*** : Jackpot terus</span>
+            <span>H*** : Gacor parah</span>
+            <span>I*** : Menang terus</span>
+            <span>J*** : Pola gampang</span>
+            <span>K*** : Auto profit</span>
+            <span>L*** : Hoki terus</span>
+            <span>M*** : Tidak pernah kalah</span>
+            <span>N*** : Setiap hari menang</span>
+            <span>O*** : Scatter sering muncul</span>
         </div>
-
-        <!-- SERING MENANG (BAWAH) -->
-        <div class="comments-win">
-            <div class="track-win">
-                <span>F*** : Aku sering menang 🔥</span>
-                <span>G*** : Jackpot terus</span>
-                <span>H*** : Gacor parah</span>
-                <span>I*** : Menang terus</span>
-                <span>J*** : Pola gampang</span>
-                <span>K*** : Auto profit</span>
-                <span>L*** : Hoki terus</span>
-                <span>M*** : Tidak pernah kalah</span>
-                <span>N*** : Setiap hari menang</span>
-                <span>O*** : Scatter sering muncul</span>
-            </div>
-        </div>
-
     </div>
+
+</div>
 
 </body>
-
 </html>
